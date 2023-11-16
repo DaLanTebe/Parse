@@ -15,3 +15,4 @@ if response.status_code == 200:
         print("Элемент с ID 'text777' не найден.")
 else:
     print(f"Не удалось получить доступ к странице, статус-код: {response.status_code}")
+
