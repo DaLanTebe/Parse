@@ -11,6 +11,7 @@ proxies_list = [
 
 proxy_pool = cycle(proxies_list)
 
+# если нужно будет авторизоваться добавить в конец: /ip
 url = "http://example.org"
 
 # Создание сессии
