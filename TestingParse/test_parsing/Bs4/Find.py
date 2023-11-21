@@ -29,6 +29,9 @@ soup = BeautifulSoup(html_doc, 'html.parser')
 # print(soup.find('div', attrs={"id": "main"}))
 print(soup.div)
 # print(soup.find('p', {'class': 'info'}))
+#  Поиск по тэгу
+# div = soup.find('span', {'name': 'count'}).text
+
 
 # name - имя тега HTML, который нужно найти. Опциональный параметр.
 # attrs - словарь атрибутов и их значений, которые нужно найти. Опциональный параметр.
