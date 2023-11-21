@@ -27,5 +27,12 @@ html_doc = """
 soup = BeautifulSoup(html_doc, 'html.parser')
 
 # print(soup.find('div', attrs={"id": "main"}))
+print(soup.div)
+# print(soup.find('p', {'class': 'info'}))
 
-print(soup.find('p', {'class': 'info'}))
+# name - имя тега HTML, который нужно найти. Опциональный параметр.
+# attrs - словарь атрибутов и их значений, которые нужно найти. Опциональный параметр.
+# text - текст, который нужно найти. Опциональный параметр.
+# limit - максимальное количество элементов, которые мы хотим найти. Опциональный параметр.
+# recursive - определяет, должны ли мы искать элементы во вложенных тегах. По умолчанию True. Опциональный параметр.
+# print(soup.find_all('p', {'class': 'info'}))
