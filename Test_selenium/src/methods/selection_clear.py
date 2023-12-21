@@ -8,7 +8,7 @@ with webdriver.Chrome() as chrome:
     elements = chrome.find_elements(By.CLASS_NAME, 'text-field')
 
     for element in elements:
-        if not element.get_attribute('disabled'):
+        if element.is_enabled():
             element.clear()
 
     chrome.find_element(By.ID, 'checkButton').click()
